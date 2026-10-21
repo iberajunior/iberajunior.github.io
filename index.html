@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Iberá Junior · Designer Sênior</title>
-<meta name="description" content="Iberá Junior, designer gráfico editorial sênior e ilustrador. Desde 1996 em projetos educacionais, editoriais, branding e web. Disponível para contratação.">
-<meta property="og:title" content="Iberá Junior · Designer Sênior">
-<meta property="og:description" content="Designer gráfico editorial sênior e ilustrador. Desde 1996. Disponível para contratação.">
+<title>Iberá Junior · Designer Web, Marca &amp; IA</title>
+<meta name="description" content="Iberá Junior, designer sênior de web e marca com IA no processo. Sites rápidos e estruturados para Google e respostas de IA. Disponível para contratação.">
+<meta property="og:title" content="Iberá Junior · Designer Web, Marca &amp; IA">
+<meta property="og:description" content="Designer sênior de web e marca, com IA no processo. Disponível para contratação.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://iberajunior.github.io/assets/og-image.jpg">
 <meta name="theme-color" content="#2b2b2b">
@@ -198,6 +198,29 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 @keyframes waPulse{70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 @media (max-width:620px){.wa{right:16px;bottom:16px;height:54px;padding:0 14px}}
 @media (prefers-reduced-motion:reduce){.wa::before{animation:none}}
+[id]{scroll-margin-top:68px}
+/* Web + AI section */
+.ai{background:var(--charcoal);color:var(--white);position:relative;overflow:hidden}
+.ai::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.ai .wrap{position:relative}
+.ai h2{color:var(--white)}
+.ai .sec-head p{color:rgba(255,255,255,.7)}
+.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ai-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);padding:28px 24px;transition:border-color .25s,transform .25s,background .25s}
+.ai-card:hover{border-color:var(--orange);transform:translateY(-4px);background:rgba(255,90,31,.06)}
+.ai-card.hl{background:var(--orange);border-color:var(--orange)}
+.ai-card.hl p{color:rgba(255,255,255,.95)}
+.ai-n{display:block;font-size:13px;font-weight:700;color:var(--orange);letter-spacing:.1em;margin-bottom:14px}
+.ai-card.hl .ai-n{color:var(--white)}
+.ai-card h3{font-size:19px;font-weight:700;line-height:1.3;margin-bottom:10px}
+.ai-card p{font-size:14.5px;color:rgba(255,255,255,.72);font-weight:300}
+.ai-card .tags span{background:rgba(255,255,255,.08);color:rgba(255,255,255,.85)}
+.stack{margin-top:40px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.stack .label{color:rgba(255,255,255,.6)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid rgba(255,255,255,.2);padding:6px 14px;font-size:13px;font-weight:500;border-radius:99px}
+@media (max-width:960px){.ai-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.ai-grid{grid-template-columns:1fr}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.dot{animation:none}}
@@ -210,6 +233,7 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
   <nav class="wrap nav" aria-label="Principal">
     <a href="#top" class="logo"><svg class="brand" viewBox="9.68 90.45 390.64 73.52" role="img" aria-label="Iberá Junior"><use href="#g-sym" class="s"/><use href="#g-word" class="w"/></svg></a>
     <ul>
+      <li><a href="#ia" data-pt="Web + IA" data-en="Web + AI">Web + IA</a></li>
       <li><a href="#trabalhos" data-pt="Trabalhos" data-en="Work">Trabalhos</a></li>
       <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
       <li><a href="#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a></li>
@@ -235,11 +259,11 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
       <div class="hero-text">
         <div class="status"><span class="dot"></span><span data-pt="Disponível para contratação · início imediato" data-en="Open to work · available immediately">Disponível para contratação · início imediato</span></div>
         <h1>Iberá<br>Junior</h1>
-        <div class="role spaced" data-pt="Designer gráfico<br>editorial sênior<br><b>&amp; ilustrador</b>" data-en="Senior graphic<br>&amp; editorial designer<br><b>&amp; illustrator</b>">Designer gráfico<br>editorial sênior<br><b>&amp; ilustrador</b></div>
-        <p class="lead" data-pt="Desde 1996 unindo visão estratégica e execução técnica impecável em projetos educacionais, editoriais, de marca e web." data-en="Since 1996, combining strategic vision with flawless technical execution across educational, editorial, brand and web projects.">Desde 1996 unindo visão estratégica e execução técnica impecável em projetos educacionais, editoriais, de marca e web.</p>
+        <div class="role spaced" data-pt="Designer sênior<br>web &amp; marca<br><b>+ IA no processo</b>" data-en="Senior designer<br>web &amp; brand<br><b>+ AI-powered workflow</b>">Designer sênior<br>web &amp; marca<br><b>+ IA no processo</b></div>
+        <p class="lead" data-pt="Crio sites rápidos, estruturados para aparecer no Google e nas respostas de IA, e uso IA no dia a dia para criar, testar e entregar em menos tempo." data-en="I build fast websites structured to show up on Google and in AI answers, and I use AI every day to create, test and ship faster.">Crio sites rápidos, estruturados para aparecer no Google e nas respostas de IA, e uso IA no dia a dia para criar, testar e entregar em menos tempo.</p>
         <div class="cta">
           <a class="btn primary" href="#trabalhos" data-pt="Ver trabalhos ↓" data-en="See work ↓">Ver trabalhos ↓</a>
-          <a class="btn ghost" href="cv-iberajunior.pdf" target="_blank" rel="noopener" data-pt="Baixar currículo" data-en="Download résumé">Baixar currículo</a>
+          <a class="btn ghost" href="#ia" data-pt="Como uso IA" data-en="How I use AI">Como uso IA</a>
         </div>
         <div class="facts">
           <span data-pt="<b>Formato:</b> CLT, PJ ou contrato" data-en="<b>Type:</b> full-time or contract"><b>Formato:</b> CLT, PJ ou contrato</span>
@@ -255,89 +279,135 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 
   <div class="band">
     <div class="wrap stats">
-      <div class="stat"><strong>30</strong><span data-pt="anos de carreira (desde 1996)" data-en="years in design (since 1996)">anos de carreira (desde 1996)</span></div>
-      <div class="stat"><strong>10+</strong><span data-pt="anos em projetos educacionais" data-en="years in educational projects">anos em projetos educacionais</span></div>
-      <div class="stat"><strong>100+</strong><span data-pt="marcas criadas" data-en="brands created">marcas criadas</span></div>
-      <div class="stat"><strong>6</strong><span data-pt="disciplinas de design" data-en="design disciplines">disciplinas de design</span></div>
+      <div class="stat"><strong>98</strong><span data-pt="PageSpeed médio dos sites" data-en="average PageSpeed score">PageSpeed médio dos sites</span></div>
+      <div class="stat"><strong>+340%</strong><span data-pt="conversão média" data-en="average conversion lift">conversão média</span></div>
+      <div class="stat"><strong>72h</strong><span data-pt="até o primeiro protótipo" data-en="to the first prototype">até o primeiro protótipo</span></div>
+      <div class="stat"><strong>&lt;2s</strong><span data-pt="de carregamento" data-en="load time">de carregamento</span></div>
     </div>
   </div>
 
+  <!-- WEB + AI -->
+  <section id="ia" class="ai">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="label o" data-pt="Web + IA" data-en="Web + AI">Web + IA</span>
+          <h2 data-pt="Design que <span class='o'>ranqueia</span>, com IA em cada etapa." data-en="Design that <span class='o'>ranks</span>, with AI at every step.">Design que <span class='o'>ranqueia</span>, com IA em cada etapa.</h2>
+        </div>
+        <p data-pt="Não uso IA para substituir o olhar de designer. Uso para chegar mais longe, mais rápido, com o mesmo padrão de qualidade." data-en="I don't use AI to replace a designer's eye. I use it to go further, faster, with the same quality bar.">Não uso IA para substituir o olhar de designer. Uso para chegar mais longe, mais rápido, com o mesmo padrão de qualidade.</p>
+      </div>
+      <div class="ai-grid reveal">
+        <article class="ai-card">
+          <span class="ai-n">01</span>
+          <h3 data-pt="Sites prontos para Google e IA" data-en="Sites built for Google and AI">Sites prontos para Google e IA</h3>
+          <p data-pt="Arquitetura de páginas, FAQ, dados estruturados e textos escritos para serem encontrados e citados por buscadores e assistentes como ChatGPT, Gemini e Perplexity." data-en="Page architecture, FAQs, structured data and copy written to be found and cited by search engines and assistants like ChatGPT, Gemini and Perplexity.">Arquitetura de páginas, FAQ, dados estruturados e textos escritos para serem encontrados e citados por buscadores e assistentes como ChatGPT, Gemini e Perplexity.</p>
+          <div class="tags"><span>SEO</span><span>AEO</span><span>Schema</span></div>
+        </article>
+        <article class="ai-card">
+          <span class="ai-n">02</span>
+          <h3 data-pt="Código leve, feito sob medida" data-en="Lightweight, custom code">Código leve, feito sob medida</h3>
+          <p data-pt="Sites em HTML, CSS e JavaScript, sem tema pesado, com PageSpeed alto e responsivos de verdade. Também entrego em WordPress, Elementor ou Webflow quando o projeto pede." data-en="Hand-built HTML, CSS and JavaScript sites with no heavy themes, high PageSpeed and truly responsive. I also ship in WordPress, Elementor or Webflow when the project calls for it.">Sites em HTML, CSS e JavaScript, sem tema pesado, com PageSpeed alto e responsivos de verdade. Também entrego em WordPress, Elementor ou Webflow quando o projeto pede.</p>
+          <div class="tags"><span>HTML/CSS/JS</span><span>Performance</span><span>Responsivo</span></div>
+        </article>
+        <article class="ai-card">
+          <span class="ai-n">03</span>
+          <h3 data-pt="IA generativa no processo" data-en="Generative AI in the workflow">IA generativa no processo</h3>
+          <p data-pt="Claude e ChatGPT no dia a dia para conteúdo, código, propostas e apresentações, com projetos e prompts próprios que garantem consistência entre entregas." data-en="Claude and ChatGPT every day for content, code, proposals and decks, with my own projects and prompts that keep every delivery consistent.">Claude e ChatGPT no dia a dia para conteúdo, código, propostas e apresentações, com projetos e prompts próprios que garantem consistência entre entregas.</p>
+          <div class="tags"><span>Claude</span><span>ChatGPT</span><span>Prompting</span></div>
+        </article>
+        <article class="ai-card">
+          <span class="ai-n">04</span>
+          <h3 data-pt="Imagem com IA" data-en="AI imagery">Imagem com IA</h3>
+          <p data-pt="Geração de imagens para conceitos, mockups e peças de campanha, sempre com direção de arte e acabamento feitos por mim." data-en="Image generation for concepts, mockups and campaign assets, always with my own art direction and finishing.">Geração de imagens para conceitos, mockups e peças de campanha, sempre com direção de arte e acabamento feitos por mim.</p>
+          <div class="tags"><span>Gemini</span><span data-pt="Direção de arte" data-en="Art direction">Direção de arte</span></div>
+        </article>
+        <article class="ai-card">
+          <span class="ai-n">05</span>
+          <h3 data-pt="Automações" data-en="Automation">Automações</h3>
+          <p data-pt="Fluxos com IA para relatórios, publicação e produção em escala, que tiram trabalho repetitivo do caminho e liberam tempo para o que é criativo." data-en="AI workflows for reporting, publishing and production at scale, removing repetitive work and freeing time for creative thinking.">Fluxos com IA para relatórios, publicação e produção em escala, que tiram trabalho repetitivo do caminho e liberam tempo para o que é criativo.</p>
+          <div class="tags"><span data-pt="Fluxos" data-en="Workflows">Fluxos</span><span data-pt="Escala" data-en="Scale">Escala</span></div>
+        </article>
+        <article class="ai-card hl">
+          <span class="ai-n">+</span>
+          <h3 data-pt="Base sólida de design" data-en="A solid design foundation">Base sólida de design</h3>
+          <p data-pt="Por trás da tecnologia, repertório real em marca, tipografia, editorial e ilustração. É isso que faz a IA entregar algo bom, e não só rápido." data-en="Behind the tech, real expertise in brand, typography, editorial and illustration. That's what makes AI output good, not just fast.">Por trás da tecnologia, repertório real em marca, tipografia, editorial e ilustração. É isso que faz a IA entregar algo bom, e não só rápido.</p>
+        </article>
+      </div>
+      <div class="stack reveal">
+        <span class="label" data-pt="Ferramentas" data-en="Toolkit">Ferramentas</span>
+        <div class="chips"><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>HTML · CSS · JS</span><span>WordPress</span><span>Elementor</span><span>Webflow</span><span>GitHub Pages</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Canva</span></div>
+      </div>
+    </div>
+  </section>
+
   <!-- WORK -->
-  <section id="trabalhos">
+  <section id="trabalhos" class="work">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
           <span class="label o" data-pt="Trabalhos selecionados" data-en="Selected work">Trabalhos selecionados</span>
-          <h2 data-pt="Do conceito à <span class='o'>entrega final</span>." data-en="From concept to <span class='o'>final delivery</span>.">Do conceito à <span class='o'>entrega final</span>.</h2>
+          <h2 data-pt="Sites e marcas <span class='o'>no ar</span>." data-en="Live sites and <span class='o'>brands</span>.">Sites e marcas <span class='o'>no ar</span>.</h2>
         </div>
-        <p data-pt="Projetos em que atuei como designer responsável, da estratégia à arte final." data-en="Projects where I was the lead designer, from strategy to final artwork.">Projetos em que atuei como designer responsável, da estratégia à arte final.</p>
+        <p data-pt="Projetos que conduzi de ponta a ponta, da estratégia ao código publicado." data-en="Projects I led end to end, from strategy to shipped code.">Projetos que conduzi de ponta a ponta, da estratégia ao código publicado.</p>
       </div>
 
       <div class="cases">
         <article class="case wide reveal">
-          <div class="img"><span class="num">01</span><img src="https://agenciakroma.com.br/assets/img/PASTA_TRANSBELLO_VISTA1-scaled.jpg" alt="Papelaria corporativa da Transbello" loading="lazy"></div>
-          <h3>Transbello</h3>
-          <div class="cat" data-pt="Branding corporativo · Site · Landing page" data-en="Corporate branding · Website · Landing page">Branding corporativo · Site · Landing page</div>
-          <p data-pt="Ecossistema completo de marca para uma empresa de transportes: identidade visual, papelaria, site institucional e landing page de locação, com uma linguagem única em todos os pontos de contato." data-en="A full brand ecosystem for a transport company: visual identity, stationery, corporate website and a rental landing page, with one consistent language across every touchpoint.">Ecossistema completo de marca para uma empresa de transportes: identidade visual, papelaria, site institucional e landing page de locação, com uma linguagem única em todos os pontos de contato.</p>
-          <div class="tags"><span>Branding</span><span>Web Design</span><span>UI</span></div>
-          <a class="live" href="http://transbello.com.br" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
-        </article>
-
-        <article class="case reveal">
-          <div class="img"><span class="num">02</span><img src="https://agenciakroma.com.br/assets/img/capa01.jpg" alt="Capa de livro" loading="lazy"></div>
-          <h3 data-pt="Projeto editorial" data-en="Editorial project">Projeto editorial</h3>
-          <div class="cat" data-pt="Capa · Diagramação" data-en="Cover · Book layout">Capa · Diagramação</div>
-          <p data-pt="Capa e projeto gráfico de livro, com a bagagem de mais de uma década produzindo livros didáticos e materiais educacionais." data-en="Book cover and interior design, backed by over a decade producing textbooks and educational materials.">Capa e projeto gráfico de livro, com a bagagem de mais de uma década produzindo livros didáticos e materiais educacionais.</p>
-          <div class="tags"><span>Editorial</span><span data-pt="Tipografia" data-en="Typography">Tipografia</span></div>
-        </article>
-
-        <article class="case reveal">
-          <div class="img"><span class="num">03</span><img src="https://agenciakroma.com.br/assets/img/jkbss-site-institucional.jpg" alt="Site institucional JKBSS" loading="lazy"></div>
+          <div class="img"><span class="num">01</span><img src="https://agenciakroma.com.br/assets/img/jkbss-site-institucional.jpg" alt="Site institucional JKBSS" loading="lazy"></div>
           <h3>JK Business School & Solutions</h3>
-          <div class="cat" data-pt="Site institucional · Arquitetura de informação" data-en="Corporate website · Information architecture">Site institucional · Arquitetura de informação</div>
-          <p data-pt="Site para consultoria em auditoria, compliance e governança, com arquitetura de páginas pensada para ser lida e citada por buscadores e assistentes de IA." data-en="Website for an audit, compliance and governance consultancy, with a page architecture built to be read and cited by search engines and AI assistants.">Site para consultoria em auditoria, compliance e governança, com arquitetura de páginas pensada para ser lida e citada por buscadores e assistentes de IA.</p>
-          <div class="tags"><span>UX</span><span>Web Design</span><span>AEO/SEO</span></div>
+          <div class="cat" data-pt="Site institucional · Arquitetura para IA · Conteúdo" data-en="Corporate website · AI-ready architecture · Content">Site institucional · Arquitetura para IA · Conteúdo</div>
+          <p data-pt="Site para consultoria em gestão, auditoria e governança, com páginas organizadas pelo momento da empresa, FAQ e área de artigos pensadas para ranquear no Google e ser citadas por assistentes de IA. Conteúdo desenvolvido com apoio de IA e revisado para linguagem simples." data-en="Website for a management, audit and governance consultancy, with pages organized by company stage, plus FAQ and articles designed to rank on Google and be cited by AI assistants. Content developed with AI support and edited for plain language.">Site para consultoria em gestão, auditoria e governança, com páginas organizadas pelo momento da empresa, FAQ e área de artigos pensadas para ranquear no Google e ser citadas por assistentes de IA. Conteúdo desenvolvido com apoio de IA e revisado para linguagem simples.</p>
+          <div class="tags"><span>AEO/SEO</span><span>UX</span><span>HTML/CSS/JS</span><span data-pt="IA" data-en="AI">IA</span></div>
           <a class="live" href="https://jkbss.com.br/" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
         </article>
 
         <article class="case reveal">
-          <div class="img"><span class="num">04</span><img src="https://agenciakroma.com.br/assets/img/projetor_BETEL3.jpg" alt="Sistema de marca Betel Engenharia" loading="lazy"></div>
+          <div class="img"><span class="num">02</span><img src="https://agenciakroma.com.br/assets/img/transbello-site-institucional.jpg" alt="Site institucional Transbello" loading="lazy"></div>
+          <h3>Transbello</h3>
+          <div class="cat" data-pt="Site · Landing page · Branding" data-en="Website · Landing page · Branding">Site · Landing page · Branding</div>
+          <p data-pt="Site institucional em HTML puro e landing page de locação para uma empresa de equipamentos, integrados à identidade visual e às campanhas de mídia paga." data-en="Hand-coded corporate website and rental landing page for an equipment company, tied into its visual identity and paid media campaigns.">Site institucional em HTML puro e landing page de locação para uma empresa de equipamentos, integrados à identidade visual e às campanhas de mídia paga.</p>
+          <div class="tags"><span>Web Design</span><span>Landing Page</span><span>Branding</span></div>
+          <a class="live" href="http://transbello.com.br" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
+        </article>
+
+        <article class="case reveal">
+          <div class="img"><span class="num">03</span><img src="https://agenciakroma.com.br/assets/img/Gemini_Generated_Image_d6afg1d6afg1d6af-e1781659883113.jpg" alt="Site Legatize" loading="lazy"></div>
+          <h3>Legatize</h3>
+          <div class="cat" data-pt="Site institucional · Identidade visual" data-en="Corporate website · Visual identity">Site institucional · Identidade visual</div>
+          <p data-pt="Marca e site para uma empresa de regularização de imóveis, migrado para código estático mais leve e com foco em explicar um serviço técnico de forma simples." data-en="Brand and website for a property regularization company, moved to lighter static code and focused on explaining a technical service simply.">Marca e site para uma empresa de regularização de imóveis, migrado para código estático mais leve e com foco em explicar um serviço técnico de forma simples.</p>
+          <div class="tags"><span>Web Design</span><span>HTML/CSS/JS</span><span>Branding</span></div>
+          <a class="live" href="http://legatize.com.br/" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
+        </article>
+
+        <article class="case reveal">
+          <div class="img"><span class="num">04</span><img src="https://agenciakroma.com.br/assets/img/Gemini_Generated_Image_dhu7n1dhu7n1dhu7-e1781659270576.jpg" alt="Site Seven Solutions" loading="lazy"></div>
+          <h3>Seven Solutions</h3>
+          <div class="cat" data-pt="Site institucional · Identidade visual" data-en="Corporate website · Visual identity">Site institucional · Identidade visual</div>
+          <p data-pt="Identidade e presença digital para uma empresa de tecnologia, do logotipo ao site institucional." data-en="Identity and digital presence for a technology company, from the logo to the corporate website.">Identidade e presença digital para uma empresa de tecnologia, do logotipo ao site institucional.</p>
+          <div class="tags"><span>Web Design</span><span>Branding</span></div>
+          <a class="live" href="https://sevensolutions.tec.br/" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
+        </article>
+
+        <article class="case reveal">
+          <div class="img"><span class="num">05</span><img src="https://agenciakroma.com.br/assets/img/projetor_BETEL3.jpg" alt="Sistema de marca Betel Engenharia" loading="lazy"></div>
           <h3>Betel Engenharia</h3>
           <div class="cat" data-pt="Sistema de marca" data-en="Brand system">Sistema de marca</div>
           <p data-pt="Sistema visual para uma engenharia: logotipo, grid, paleta e aplicações que traduzem precisão técnica em uma marca confiável." data-en="Visual system for an engineering firm: logo, grid, palette and applications that turn technical precision into a trustworthy brand.">Sistema visual para uma engenharia: logotipo, grid, paleta e aplicações que traduzem precisão técnica em uma marca confiável.</p>
           <div class="tags"><span>Branding</span><span>Brand System</span></div>
-        </article>
-
-        <article class="case reveal">
-          <div class="img"><span class="num">05</span><img src="https://agenciakroma.com.br/assets/img/chancela_LEGATIZE-scaled-e1781559717924.jpg" alt="Identidade visual Legatize" loading="lazy"></div>
-          <h3>Legatize</h3>
-          <div class="cat" data-pt="Identidade visual · Site institucional" data-en="Visual identity · Corporate website">Identidade visual · Site institucional</div>
-          <p data-pt="Marca e site para uma empresa de regularização de imóveis, com foco em clareza para um serviço técnico e burocrático." data-en="Brand and website for a property regularization company, focused on making a technical, bureaucratic service easy to understand.">Marca e site para uma empresa de regularização de imóveis, com foco em clareza para um serviço técnico e burocrático.</p>
-          <div class="tags"><span>Branding</span><span>Web Design</span></div>
-          <a class="live" href="http://legatize.com.br/" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
-        </article>
-
-        <article class="case wide reveal">
-          <div class="img"><span class="num">06</span><img src="https://agenciakroma.com.br/assets/img/LOGO_7_SOLUTIONS_HORIZONTAL_fundo-azul-scaled.jpg" alt="Identidade visual Seven Solutions" loading="lazy"></div>
-          <h3>Seven Solutions</h3>
-          <div class="cat" data-pt="Identidade visual · Site institucional" data-en="Visual identity · Corporate website">Identidade visual · Site institucional</div>
-          <p data-pt="Identidade e presença digital para uma empresa de tecnologia, do logotipo ao site institucional." data-en="Identity and digital presence for a technology company, from the logo to the corporate website.">Identidade e presença digital para uma empresa de tecnologia, do logotipo ao site institucional.</p>
-          <div class="tags"><span>Branding</span><span>Web Design</span></div>
-          <a class="live" href="https://sevensolutions.tec.br/" target="_blank" rel="noopener" data-pt="Ver site publicado ↗" data-en="View live site ↗">Ver site publicado ↗</a>
         </article>
       </div>
 
       <div class="more reveal">
         <h3 class="label" data-pt="Mais projetos" data-en="More projects">Mais projetos</h3>
         <div class="grid">
-          <figure><img src="https://agenciakroma.com.br/assets/img/website_mockup.jpg" alt="" loading="lazy"><figcaption>Mercer Advogados · Web</figcaption></figure>
-          <figure><img src="https://agenciakroma.com.br/assets/img/logo_ASTRUM_vertical_02.jpg" alt="" loading="lazy"><figcaption>Astrum Finance · Branding</figcaption></figure>
-          <figure><img src="https://agenciakroma.com.br/assets/img/3.jpg" alt="" loading="lazy"><figcaption>Unité · Branding</figcaption></figure>
-          <figure><img src="https://agenciakroma.com.br/assets/img/SS_chancela04.jpg" alt="" loading="lazy"><figcaption>SS Advocacia · Branding</figcaption></figure>
-          <figure><img src="https://agenciakroma.com.br/assets/img/social_media_AL-SULTAN_Prancheta-1.jpg" alt="" loading="lazy"><figcaption>AlSultan · Social</figcaption></figure>
           <figure><img src="https://agenciakroma.com.br/assets/img/caos-no-cabide-landing-page.jpg" alt="" loading="lazy"><figcaption>Caos no Cabide · LP</figcaption></figure>
           <figure><img src="https://agenciakroma.com.br/assets/img/fernanda-perretto-barbearia-landing-page.jpg" alt="" loading="lazy"><figcaption>Fernanda Perretto · LP</figcaption></figure>
-          <figure><img src="https://agenciakroma.com.br/assets/img/cartao_reconstrucoes_v01-scaled.jpg" alt="" loading="lazy"><figcaption>Reconstruções · Branding</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/cash-bjj-gp-landing-page.jpg" alt="" loading="lazy"><figcaption>Cash BJJ GP · LP</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/website_mockup.jpg" alt="" loading="lazy"><figcaption>Mercer Advogados · Web</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/Gemini_Generated_Image_wud3h4wud3h4wud3.jpg" alt="" loading="lazy"><figcaption>SurgicalMedi · Web</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/PASTA_TRANSBELLO_VISTA1-scaled.jpg" alt="" loading="lazy"><figcaption>Transbello · Branding</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/logo_ASTRUM_vertical_02.jpg" alt="" loading="lazy"><figcaption>Astrum Finance · Branding</figcaption></figure>
+          <figure><img src="https://agenciakroma.com.br/assets/img/capa01.jpg" alt="" loading="lazy"><figcaption data-pt="Projeto editorial" data-en="Editorial project">Projeto editorial</figcaption></figure>
         </div>
       </div>
     </div>
@@ -348,31 +418,31 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
     <div class="dark reveal">
       <svg class="mark sym-tag" viewBox="9.68 95.04 68.00 52.74" aria-hidden="true"><use href="#g-sym"/></svg>
       <span class="label o" data-pt="Sobre" data-en="About">Sobre</span>
-      <h2 data-pt="Visão de negócio, <span class='o'>execução</span> impecável." data-en="Business vision, <span class='o'>flawless</span> execution.">Visão de negócio, <span class='o'>execução</span> impecável.</h2>
-      <p class="bio" data-pt="Atuo no setor educacional há muitos anos, com vasta experiência em projetos educacionais, materiais didáticos de alto impacto, conversão digital e endomarketing." data-en="I've worked in the education sector for many years, with deep experience in educational projects, high-impact learning materials, digital conversion and internal communications.">Atuo no setor educacional há muitos anos, com vasta experiência em projetos educacionais, materiais didáticos de alto impacto, conversão digital e endomarketing.</p>
+      <h2 data-pt="Sempre na <span class='o'>próxima</span> ferramenta." data-en="Always on the <span class='o'>next</span> tool.">Sempre na <span class='o'>próxima</span> ferramenta.</h2>
+      <p class="bio" data-pt="Comecei no impresso, migrei para o digital quando a web ainda engatinhava e hoje trabalho com IA no centro do processo. Cada mudança de ferramenta virou vantagem, não obstáculo." data-en="I started in print, moved to digital when the web was still young, and today I work with AI at the core of my process. Every tool shift became an advantage, not an obstacle.">Comecei no impresso, migrei para o digital quando a web ainda engatinhava e hoje trabalho com IA no centro do processo. Cada mudança de ferramenta virou vantagem, não obstáculo.</p>
       <h3 class="label" style="margin-top:36px" data-pt="Habilidades" data-en="Skills">Habilidades</h3>
       <ul class="skills" style="margin-top:12px">
-        <li><span>InDesign</span><span>Expert</span></li>
-        <li><span data-pt="Diagramação" data-en="Layout / Typesetting">Diagramação</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
-        <li><span data-pt="Projetos gráficos" data-en="Graphic design projects">Projetos gráficos</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
-        <li><span>Web Design</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
+        <li><span data-pt="Web design (HTML/CSS/JS)" data-en="Web design (HTML/CSS/JS)">Web design (HTML/CSS/JS)</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
+        <li><span data-pt="IA generativa (Claude, ChatGPT)" data-en="Generative AI (Claude, ChatGPT)">IA generativa (Claude, ChatGPT)</span><span data-pt="Uso diário" data-en="Daily use">Uso diário</span></li>
+        <li><span data-pt="SEO e AEO (busca por IA)" data-en="SEO & AEO (AI search)">SEO e AEO (busca por IA)</span><span data-pt="Aplicado" data-en="Applied">Aplicado</span></li>
+        <li><span>Branding</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
         <li><span>Photoshop / Illustrator</span><span>Expert</span></li>
-        <li><span>Canva</span><span>Expert</span></li>
-        <li><span data-pt="Ferramentas de IA" data-en="AI tools">Ferramentas de IA</span><span data-pt="Explorador" data-en="Explorer">Explorador</span></li>
+        <li><span>InDesign</span><span>Expert</span></li>
+        <li><span data-pt="Diagramação e editorial" data-en="Layout & editorial">Diagramação e editorial</span><span data-pt="Sênior" data-en="Senior">Sênior</span></li>
       </ul>
     </div>
     <div class="light reveal">
       <div class="name">Iberá Edmar Gomes Junior</div>
-      <p data-pt="Designer sênior atuando no mercado desde 1996. Especialista em <strong>projetos educacionais, design gráfico, editorial, diagramação complexa e ilustrações</strong>. Fundador da Agência KROMA, trago a visão estratégica de negócios aliada à execução técnica impecável." data-en="Senior designer working since 1996. Specialist in <strong>educational projects, graphic design, editorial, complex layout and illustration</strong>. As founder of Agência KROMA, I bring strategic business vision together with flawless technical execution.">Designer sênior atuando no mercado desde 1996. Especialista em <strong>projetos educacionais, design gráfico, editorial, diagramação complexa e ilustrações</strong>. Fundador da Agência KROMA, trago a visão estratégica de negócios aliada à execução técnica impecável.</p>
-      <p data-pt="Compromisso inegociável com <strong>legibilidade, estética e prazos</strong>. Agora quero colocar essa bagagem a serviço de um time." data-en="An uncompromising commitment to <strong>legibility, aesthetics and deadlines</strong>. Now I want to bring all of that to one team.">Compromisso inegociável com <strong>legibilidade, estética e prazos</strong>. Agora quero colocar essa bagagem a serviço de um time.</p>
+      <p data-pt="Sou designer sênior com foco em <strong>web, marca e IA aplicada ao processo criativo</strong>. Desenho e publico sites, crio identidades visuais e uso ferramentas de IA para pesquisar, escrever, prototipar e automatizar." data-en="I'm a senior designer focused on <strong>web, brand and AI applied to the creative process</strong>. I design and ship websites, build visual identities, and use AI tools to research, write, prototype and automate.">Sou designer sênior com foco em <strong>web, marca e IA aplicada ao processo criativo</strong>. Desenho e publico sites, crio identidades visuais e uso ferramentas de IA para pesquisar, escrever, prototipar e automatizar.</p>
+      <p data-pt="Na Agência KROMA, conduzo projetos de ponta a ponta, da estratégia ao código no ar. Antes disso, construí uma base forte em <strong>editorial, ilustração e materiais educacionais</strong> em empresas como Positivo e Brink Mobil. Essa combinação me deixa confortável tanto conversando com quem decide quanto colocando a mão no código." data-en="At Agência KROMA, I run projects end to end, from strategy to live code. Before that, I built a strong foundation in <strong>editorial, illustration and educational content</strong> at companies like Positivo and Brink Mobil. That mix makes me equally comfortable talking with decision makers and getting hands-on with code.">Na Agência KROMA, conduzo projetos de ponta a ponta, da estratégia ao código no ar. Antes disso, construí uma base forte em <strong>editorial, ilustração e materiais educacionais</strong> em empresas como Positivo e Brink Mobil. Essa combinação me deixa confortável tanto conversando com quem decide quanto colocando a mão no código.</p>
       <p class="edu"><b>Universidade Positivo</b> · 2007</p>
       <div class="caps">
-        <div class="cap"><h3 data-pt="Editorial & Didático" data-en="Editorial & Educational">Editorial & Didático</h3><p data-pt="Livros, apostilas, relatórios e diagramação complexa." data-en="Books, textbooks, reports and complex layout.">Livros, apostilas, relatórios e diagramação complexa.</p></div>
-        <div class="cap"><h3 data-pt="Ilustração" data-en="Illustration">Ilustração</h3><p data-pt="Ilustrações técnicas e editoriais." data-en="Technical and editorial illustration.">Ilustrações técnicas e editoriais.</p></div>
+        <div class="cap"><h3>Web Design</h3><p data-pt="Sites institucionais e landing pages rápidos e responsivos." data-en="Fast, responsive corporate sites and landing pages.">Sites institucionais e landing pages rápidos e responsivos.</p></div>
+        <div class="cap"><h3 data-pt="Busca e IA" data-en="Search & AI">Busca e IA</h3><p data-pt="Arquitetura e conteúdo para Google e respostas de IA." data-en="Architecture and content for Google and AI answers.">Arquitetura e conteúdo para Google e respostas de IA.</p></div>
+        <div class="cap"><h3 data-pt="IA no processo" data-en="AI workflow">IA no processo</h3><p data-pt="Conteúdo, código, imagens e automações com IA." data-en="Content, code, images and automation with AI.">Conteúdo, código, imagens e automações com IA.</p></div>
         <div class="cap"><h3>Branding</h3><p data-pt="Identidade visual, sistemas de marca e manuais." data-en="Visual identity, brand systems and guidelines.">Identidade visual, sistemas de marca e manuais.</p></div>
-        <div class="cap"><h3>Web Design</h3><p data-pt="Sites institucionais e landing pages responsivas." data-en="Corporate sites and responsive landing pages.">Sites institucionais e landing pages responsivas.</p></div>
-        <div class="cap"><h3 data-pt="Endomarketing" data-en="Internal comms">Endomarketing</h3><p data-pt="Campanhas internas e apresentações corporativas." data-en="Internal campaigns and corporate presentations.">Campanhas internas e apresentações corporativas.</p></div>
-        <div class="cap"><h3 data-pt="Animação" data-en="Animation">Animação</h3><p data-pt="Animações para conteúdo educacional e redes." data-en="Animation for educational content and social.">Animações para conteúdo educacional e redes.</p></div>
+        <div class="cap"><h3 data-pt="Editorial" data-en="Editorial">Editorial</h3><p data-pt="Diagramação complexa, relatórios e materiais didáticos." data-en="Complex layout, reports and learning materials.">Diagramação complexa, relatórios e materiais didáticos.</p></div>
+        <div class="cap"><h3 data-pt="Ilustração" data-en="Illustration">Ilustração</h3><p data-pt="Ilustrações técnicas e editoriais." data-en="Technical and editorial illustration.">Ilustrações técnicas e editoriais.</p></div>
       </div>
     </div>
   </div>
@@ -385,27 +455,26 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
         <li>
           <h3 data-pt="Agência KROMA | Diretor Criativo" data-en="Agência KROMA | Creative Director">Agência KROMA | Diretor Criativo</h3>
           <div class="when now" data-pt="2022 · Atual" data-en="2022 · Present">2022 · Atual</div>
-          <p data-pt="Gestão de projetos editoriais e digitais, atendimento a clientes de grande porte, coordenação criativa." data-en="Managing editorial and digital projects, serving large clients, creative coordination.">Gestão de projetos editoriais e digitais, atendimento a clientes de grande porte, coordenação criativa.</p>
+          <p data-pt="Web design e desenvolvimento de sites em HTML/CSS/JS e WordPress, com estrutura para buscadores e respostas de IA. Branding, landing pages e campanhas. Uso de IA generativa em conteúdo, código, imagens e automação de processos. Atendimento direto a clientes e coordenação criativa." data-en="Web design and development in HTML/CSS/JS and WordPress, structured for search engines and AI answers. Branding, landing pages and campaigns. Generative AI for content, code, imagery and process automation. Direct client management and creative leadership.">Web design e desenvolvimento de sites em HTML/CSS/JS e WordPress, com estrutura para buscadores e respostas de IA. Branding, landing pages e campanhas. Uso de IA generativa em conteúdo, código, imagens e automação de processos. Atendimento direto a clientes e coordenação criativa.</p>
         </li>
         <li>
           <h3 data-pt="Tribunal de Justiça do Paraná (TJPR)" data-en="Paraná State Court of Justice (TJPR)">Tribunal de Justiça do Paraná (TJPR)</h3>
           <div class="when">2021 · 2022</div>
-          <p data-pt="Endomarketing, diagramação de relatórios técnicos, apresentações corporativas e identidade visual." data-en="Internal communications, technical report layout, corporate presentations and visual identity.">Endomarketing, diagramação de relatórios técnicos, apresentações corporativas e identidade visual.</p>
+          <p data-pt="Endomarketing, relatórios técnicos, apresentações corporativas e identidade visual de campanhas internas." data-en="Internal communications, technical reports, corporate presentations and visual identity for internal campaigns.">Endomarketing, relatórios técnicos, apresentações corporativas e identidade visual de campanhas internas.</p>
         </li>
         <li>
           <h3>Brink Mobil</h3>
           <div class="when">2016 · 2019</div>
-          <p data-pt="Design de materiais didáticos, robótica e tecnologia educacional. Projetos de alta complexidade gráfica." data-en="Design of learning materials for robotics and educational technology. Projects of high graphic complexity.">Design de materiais didáticos, robótica e tecnologia educacional. Projetos de alta complexidade gráfica.</p>
+          <p data-pt="Materiais didáticos de robótica e tecnologia educacional, com alta complexidade gráfica." data-en="Learning materials for robotics and educational technology, with high graphic complexity.">Materiais didáticos de robótica e tecnologia educacional, com alta complexidade gráfica.</p>
         </li>
         <li>
           <h3 data-pt="Positivo Informática e Editora" data-en="Positivo Informática & Editora Positivo">Positivo Informática e Editora</h3>
           <div class="when">2005 · 2015</div>
-          <p data-pt="Desenvolvimento integral de conteúdos educacionais, ilustrações técnicas, animações e diagramação de livros didáticos." data-en="End-to-end development of educational content, technical illustration, animation and textbook layout.">Desenvolvimento integral de conteúdos educacionais, ilustrações técnicas, animações e diagramação de livros didáticos.</p>
+          <p data-pt="Conteúdos educacionais digitais e impressos: ilustrações técnicas, animações e diagramação de livros didáticos." data-en="Digital and print educational content: technical illustration, animation and textbook layout.">Conteúdos educacionais digitais e impressos: ilustrações técnicas, animações e diagramação de livros didáticos.</p>
         </li>
       </ul>
     </div>
   </section>
-
   <!-- CONTACT -->
   <section id="contato" class="contact">
     <svg class="mark wm" viewBox="9.68 95.04 68.00 52.74" aria-hidden="true"><use href="#g-sym"/></svg>
@@ -435,6 +504,7 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
     <a href="#top" class="logo"><svg class="brand" viewBox="9.68 90.45 390.64 73.52" role="img" aria-label="Iberá Junior"><use href="#g-sym" class="s"/><use href="#g-word" class="w"/></svg></a>
     <div class="meta">
       <span>© <span id="y">2026</span> Iberá Edmar Gomes Junior</span>
+      <span data-pt="Projetado e codificado por mim." data-en="Designed and coded by me.">Projetado e codificado por mim.</span>
     </div>
   </div>
 </footer>
@@ -449,7 +519,7 @@ footer .meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
     document.documentElement.lang = l==='en' ? 'en' : 'pt-BR';
     document.querySelectorAll('[data-'+l+']').forEach(function(el){ el.innerHTML = el.getAttribute('data-'+l); });
     buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang===l); });
-    document.title = l==='en' ? 'Iberá Junior · Senior Designer' : 'Iberá Junior · Designer Sênior';
+    document.title = l==='en' ? 'Iberá Junior · Web, Brand & AI Designer' : 'Iberá Junior · Designer Web, Marca & IA';
     try{ localStorage.setItem('lang', l); }catch(e){}
   }
   buttons.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang); }); });
